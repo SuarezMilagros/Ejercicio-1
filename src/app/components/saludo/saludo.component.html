@@ -1,5 +1,5 @@
 <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
-    <p *ngIf="mostrarSaludo" [ngClass]="{'texto': rojo , 'texto1': verde}">¡Hola, {{nombre}}!</p>
+    <p *ngIf="mostrarSaludo" [ngClass]="{'texto': rojo , 'texto1': verde}">¡Hola, {{nombre | mayusculas}}!</p>
     <div class="mt-3 text-center">
         <button type="button" class="btn btn-primary mx-2" id="rojo" (click)="esRojo()">Rojo</button>
         <button type="button" class="btn btn-primary mx-2" id="verde" (click)="esVerde()">Verde</button>
