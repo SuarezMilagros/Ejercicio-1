@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SaludoComponent } from './components/saludo/saludo.component';
 import { HomeComponent } from './components/home/home.component';
 import { MayusculasPipe } from './pipes.pipe';
+import { DespedidaComponent } from './components/despedida/despedida.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { MayusculasPipe } from './pipes.pipe';
     SaludoComponent,
     HomeComponent,
     MayusculasPipe,
+    DespedidaComponent,
 
   ],
   imports: [
