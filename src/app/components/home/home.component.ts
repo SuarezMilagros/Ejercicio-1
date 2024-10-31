@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   mostrarSaludo: boolean = true;
+
+  toggleSaludo() {
+    this.mostrarSaludo = !this.mostrarSaludo;
+}
 }
