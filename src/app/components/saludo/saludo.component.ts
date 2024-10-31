@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-saludo',
@@ -13,6 +14,8 @@ export class SaludoComponent {
   rojo: boolean = false;
   verde: boolean = false;
 
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
   }
 
@@ -21,5 +24,9 @@ export class SaludoComponent {
   }
   esVerde(){
     this.verde = !this.verde;
+  }
+  
+  irADespedida() {
+    this.router.navigate(['/despedida', this.nombre]); 
   }
 }
