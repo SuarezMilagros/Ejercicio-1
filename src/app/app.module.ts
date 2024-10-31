@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SaludoComponent } from './components/saludo/saludo.component';
 import { HomeComponent } from './components/home/home.component';
+import { MayusculasPipe } from './pipes.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaludoComponent,
-    HomeComponent
+    HomeComponent,
+    MayusculasPipe,
+
   ],
   imports: [
     BrowserModule,
