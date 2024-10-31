@@ -1,3 +1,5 @@
-<p *ngIf="mostrarSaludo">¡Hola, {{nombre}}!</p>
+<p *ngIf="mostrarSaludo" [ngClass]="{'texto': rojo , 'texto1': verde}">¡Hola, {{nombre}}!</p>
 
+<button type="button" class="btn btn-primary" id="rojo" (click)="esRojo()">Rojo</button>
 
+<button type="button" class="btn btn-primary" id="verde" (click)="esVerde()">Verde</button>
